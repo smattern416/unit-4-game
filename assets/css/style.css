@@ -1,7 +1,28 @@
 .container {
     max-width: 90%;
   }
-.crystals {
+#purpleCrystal {
+    margin: 20px;
+    padding: 10px;
+    float: left;
+    width: 200px;
+    height: auto;
+  }
+  #pinkCrystal {
+    margin: 20px;
+    padding: 10px;
+    float: left;
+    width: 200px;
+    height: auto;
+  }
+  #orangeCrystal {
+    margin: 20px;
+    padding: 10px;
+    float: left;
+    width: 200px;
+    height: auto;
+  }
+  #yellowCrystal {
     margin: 20px;
     padding: 10px;
     float: left;

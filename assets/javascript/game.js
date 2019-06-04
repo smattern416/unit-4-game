@@ -1,17 +1,17 @@
 $(document).ready(function() {
     var wins = 0;
-    $("#wScore").text("Wins: " + winCount);
-    var lossCount = 0; // counter for game losses
-    $("#lScore").text("Losses: " + lossCount);
-    var userScore = 0; // counter for user score
+    $("#winScore").text("Wins: " + winCount);
+    var lossCount = 0; 
+    $("#lossScore").text("Losses: " + lossCount);
+    var userScore = 0; 
     var gameScore = Math.floor(Math.random() * 102) + 19; 
-    var crystalOne = Math.floor(Math.random() * 12) + 1; 
-    var crystalTwo = Math.floor(Math.random() * 12) + 1; 
-    var crystalThree = Math.floor(Math.random() * 12) + 1; 
-    var crystalFour = Math.floor(Math.random() * 12) + 1;
+    var purpleCrystal = Math.floor(Math.random() * 12) + 1; 
+    var pinkCrystal = Math.floor(Math.random() * 12) + 1; 
+    var orangeCrystal = Math.floor(Math.random() * 12) + 1; 
+    var yellowCrystal = Math.floor(Math.random() * 12) + 1;
 
-    $("#gScore").text("Game Score: " + gameScore);
-    $("#uScore").text("User Score: " + userScore);
+    $("#gameScore").text("Game Score: " + gameScore);
+    $("#userScore").text("User Score: " + userScore);
 
     //  What happens when you click on the purple crystal
  

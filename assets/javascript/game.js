@@ -11,7 +11,8 @@ $(document).ready(function() {
     var wins= 0;
     var losses= 0;
     var userTotal= 0;
-    
+    $(`#wins`).text(wins);
+    $(`#losses`).text(losses);
 
     //  What happens when you click on the purple crystal
  

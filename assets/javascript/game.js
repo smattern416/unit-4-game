@@ -60,5 +60,12 @@ $(document).ready(function() {
         loseGame();
       }
   });
+//   What happens when you win the game
+  function winGame() {
+    winCount = winCount + 1;
+    $("#wScore").text("Wins: " + winCount);
+    resetGame();
+  }
+//   What happens when you lose the game
 
 });

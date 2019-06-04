@@ -1,12 +1,15 @@
 header {
     font-size: 75px;
+    padding-bottom: 30px;
 }
 h1 {
     font-size: 20px;
     font-weight: bold;
+    padding: 5px;
 }
 p {
     font-size: 20px;
+    padding: 5px;
 }
 
 .container {

@@ -67,5 +67,11 @@ $(document).ready(function() {
     resetGame();
   }
 //   What happens when you lose the game
+function loseGame() {
+    lossCount = lossCount + 1;
+    $("#lScore").text("Losses: " + lossCount);
+    resetGame();
+  }
 
+// Reset the game
 });

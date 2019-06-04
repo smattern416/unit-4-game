@@ -4,4 +4,7 @@
 .crystals {
     margin: 20px;
     padding: 10px;
+    float: left;
+    width: 200px;
+    height: auto;
   }

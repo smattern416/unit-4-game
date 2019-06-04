@@ -14,64 +14,19 @@ $(document).ready(function() {
     $("#uScore").text("User Score: " + userScore);
 
     //  What happens when you click on the purple crystal
-  $("#crystal1").click(function() {
-    userScore = userScore + crystalOne; 
-    console.log("User Score: " + userScore);
-    $("#uScore").text("User Score: " + userScore);
-      if (userScore === gameScore) {
-        winGame();
-      } else if (userScore > gameScore) {
-        loseGame();
-      }
-  });
+ 
 
 //   What happens when you click on the pink crystal
-  $("#crystal2").click(function() {
-    userScore = userScore + crystalTwo; 
-    console.log("User Score: " + userScore);
-      $("#uScore").text("User Score: " + userScore);
-      if (userScore === gameScore) {
-        winGame();
-      } else if (userScore > gameScore) {
-        loseGame();
-      }
-  });
+
 
 //   What happens when you click on the orange crystal
-  $("#crystal3").click(function() {
-    userScore = userScore + crystalThree; 
-    console.log("User Score: " + userScore);
-      $("#uScore").text("User Score: " + userScore);
-      if (userScore === gameScore) {
-        winGame();
-      } else if (userScore > gameScore) {
-        loseGame();
-      }
-  });
+
 
 //   What happens when you click on the yellow crystal
-  $("#crystal4").click(function() {
-    userScore = userScore + crystalFour; 
-    console.log("User Score: " + userScore);
-    $("#uScore").text("User Score: " + userScore);
-      if (userScore === gameScore) {
-        winGame();
-      } else if (userScore > gameScore) {
-        loseGame();
-      }
-  });
+ 
 //   What happens when you win the game
-  function winGame() {
-    winCount = winCount + 1;
-    $("#wScore").text("Wins: " + winCount);
-    resetGame();
-  }
+ 
 //   What happens when you lose the game
-function loseGame() {
-    lossCount = lossCount + 1;
-    $("#lScore").text("Losses: " + lossCount);
-    resetGame();
-  }
 
 // Reset the game
 });

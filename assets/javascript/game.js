@@ -1,17 +1,17 @@
 $(document).ready(function() {
-    var wins = 0;
-    $("#winScore").text("Wins: " + winCount);
-    var lossCount = 0; 
-    $("#lossScore").text("Losses: " + lossCount);
-    var userScore = 0; 
-    var gameScore = Math.floor(Math.random() * 102) + 19; 
-    var purpleCrystal = Math.floor(Math.random() * 12) + 1; 
-    var pinkCrystal = Math.floor(Math.random() * 12) + 1; 
-    var orangeCrystal = Math.floor(Math.random() * 12) + 1; 
-    var yellowCrystal = Math.floor(Math.random() * 12) + 1;
 
-    $("#gameScore").text("Game Score: " + gameScore);
-    $("#userScore").text("User Score: " + userScore);
+    var random=Math.floor(Math.random()*102+19)
+    $(`#numberMatch`).text(Random);
+
+    var pink= Math.floor(Math.random()*12+1);
+    var purple= Math.floor(Math.random()*12+1);
+    var orange= Math.floor(Math.random()*12+1);
+    var yellow= Math.floor(Math.random()*12+1);
+
+    var wins= 0;
+    var losses= 0;
+    var userTotal= 0;
+    
 
     //  What happens when you click on the purple crystal
  
@@ -28,5 +28,5 @@ $(document).ready(function() {
  
 //   What happens when you lose the game
 
-// Reset the game
+//  Reset the game
 });

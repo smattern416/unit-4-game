@@ -27,16 +27,31 @@ $(document).ready(function() {
         $(`#totalScore`).text(userTotal);
     }
 //   What happens when you win the game
-function win() {
+function winning() {
     wins++;
     $(`#wins`).text(wins);
     reset();
 }
  
 //   What happens when you lose the game
+function losing() {
+    losses++;
+    $(`#losses`).text(losses);
+    reset();
+}
 
     //  What happens when you click on the purple crystal
- 
+    $(`#pink`).on(`click`, function(){
+        userTotal = userTotal + pink;
+        $(`#totalScore`).text(userTotal);
+        
+        if(userTotal == Random){
+            winning();
+        }
+        else if(userTotal > Random){
+            losing();
+        }
+    })
 
 //   What happens when you click on the pink crystal
 
@@ -45,10 +60,7 @@ function win() {
 
 
 //   What happens when you click on the yellow crystal
- 
-//   What happens when you win the game
- 
-//   What happens when you lose the game
+
 
 
 });

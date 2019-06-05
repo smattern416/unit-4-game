@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-    var random=Math.floor(Math.random()*102+19)
+    var Random= Math.floor(Math.random()*102+19);
+
     $("#numberMatch").text(Random);
 
     var purple= Math.floor(Math.random()*12+1);
@@ -40,10 +41,13 @@ function losing() {
     reset();
 }
 
+
+
     //  What happens when you click on the purple crystal
-    $(".purple").on("click", function(){
+    $("#purpleCrystal").on ("click", function(){
         userTotal = userTotal + purple;
-        $("#totalScore").text(userTotal);
+        console.log("hello" + userTotal);
+        $("#userScore").text(userTotal);
         
         if (userTotal == Random){
             winning();
@@ -53,23 +57,23 @@ function losing() {
         }
     })
 
-//   What happens when you click on the pink crystal
-$(".pink").on("click", function(){
-    userTotal = userTotal + pink;
-    $("#totalScore").text(userTotal);
-    
-    if (userTotal == Random){
-        winning();
-    }
-    else if (userTotal > Random){
-        losing();
-    }
-})
+    //   What happens when you click on the pink crystal
+    $("#pinkCrystal").on("click", function(){
+        userTotal = userTotal + pink;
+        $("#userScore").text(userTotal);
+        
+        if (userTotal == Random){
+            winning();
+        }
+        else if (userTotal > Random){
+            losing();
+        }
+    })
 
 //   What happens when you click on the orange crystal
-$(".orange").on("click", function(){
+$("#orangeCrystal").on("click", function(){
     userTotal = userTotal + orange;
-    $("#totalScore").text(userTotal);
+    $("#userScore").text(userTotal);
     
     if (userTotal == Random){
         winning();
@@ -81,9 +85,9 @@ $(".orange").on("click", function(){
 
 //   What happens when you click on the yellow crystal
 
-$(".yellow").on("click", function(){
+$("#yellowCrystal").on("click", function(){
     userTotal = userTotal + yellow;
-    $("#totalScore").text(userTotal);
+    $("#userScore").text(userTotal);
     
     if (userTotal == Random){
         winning();
